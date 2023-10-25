@@ -1,129 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="index.css" />
-    <!-- Bootstrap CSS -->
-
-    <!-- Stylesheets -->
-
-    <!-- Bootstrap Core CSS -->
-    <link
-      href="https://www.plumsteadrunners.co.uk/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Custom CSS -->
-    <link
-      href="https://www.plumsteadrunners.co.uk/bootstrap/css/style.css"
-      rel="stylesheet"
-    />
-    <!-- font-awesome 4.7 -->
-    <link
-      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-
+    <!-- 
+    - primary meta tags
+  -->
     <title>續すみびやき</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food" />
+    <meta
+      name="description"
+      content="This is a Restaurant html template made by codewithsadee"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
   </head>
-  <body>
-    <span class="loader"></span>
-    <section class="section-intro">
-      <header>
-        <h1>續すみびやき</h1>
-      </header>
-    </section>
 
-    <section class="about-section">
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">續すみびやき</p>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">
+            Restaurant St, Delicious City, London 9578, UK
+          </span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 8.00 am to 10.00 pm</span>
+        </div>
+
+        <a href="tel:+11234567890" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">+1 123 456 7890</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:booking@restaurant.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">booking@restaurant.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              Restaurant St, Delicious City, <br />
+              London 9578, UK
+            </address>
+
+            <p class="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+
+            <a href="mailto:booking@grilli.com" class="body-4 sidebar-link"
+              >booking@grilli.com</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Booking Request</p>
+
+            <a
+              href="tel:+88123123456"
+              class="body-1 contact-number hover-underline"
+            >
+              +88-123-123456
+            </a>
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
       <article>
-        <h3>一間重新定義臺灣燒肉樣態的概念店</h3>
-        <div class="gallery">
-          <div class="images">
-            <ul>
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/zc4MEZMdXhc/600x600" />
-                </a>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-1.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                「緣」是動機，而「續」是動作，為了不再原地踏步，立刻開始動作
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                <div class="barhead">
+                  續すみびやき <br />
+                  XU SUMIBIYAKI
+                </div>
+              </h1>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-2.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                一間重新定義臺灣燒肉樣態的概念店
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                <div class="barhead">
+                  續すみびやき <br />
+                  XU SUMIBIYAKI
+                </div>
+              </h1>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-3.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+          >
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+        </section>
+
+        <!-- 
+        - #MENU
+      -->
+
+        <section
+          class="section menu will-fadeIn"
+          aria-label="menu-label"
+          id="menu"
+        >
+          <div class="container">
+            <p class="section-subtitle text-center label-2">
+              Special Selection
+            </p>
+
+            <h2 class="headline-1 section-title text-center">
+              <div class="barhead">菜單</div>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
               </li>
 
-              <li class="grow">
-                <a href="#">
-                  <img
-                    src="https://images.unsplash.com/photo-1624578296395-8e823bddce36?auto=format&fit=crop&q=80&w=2068&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </a>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
               </li>
 
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/LOlMe8HfofI/600x600" />
-                </a>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
               </li>
 
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/WLUHO9A_xik/600x600" />
-                </a>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
               </li>
 
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/cGwfkwHmt98/600x600" />
-                </a>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-5.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Olivas Rellenas"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Olivas Rellenas</a>
+                      </h3>
+
+                      <span class="span title-2">$25.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Avocados with crab meat, red onion, crab salad stuffed red
+                      bell pepper and green bell pepper.
+                    </p>
+                  </div>
+                </div>
               </li>
 
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/z0nVqfrOqWA/600x600" />
-                </a>
-              </li>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-6.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Opu Fish"
+                      class="img-cover"
+                    />
+                  </figure>
 
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/qlHRuDvaxL8/600x600" />
-                </a>
-              </li>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Opu Fish</a>
+                      </h3>
 
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/L-2p8fapOA8/600x600" />
-                </a>
-              </li>
+                      <span class="span title-2">$49.00</span>
+                    </div>
 
-              <li class="grow">
-                <a href="#">
-                  <img src="https://source.unsplash.com/jUPOXXRNdcA/600x600" />
-                </a>
-              </li>
-
-              <li class="grow">
-                <a href="#">
-                  <!--               try a random one -->
-                  <img src="https://source.unsplash.com/random/600x600" />
-                </a>
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
               </li>
             </ul>
+
+            <p class="menu-text text-center">
+              During winter daily from <span class="span">7:00 pm</span> to
+              <span class="span">9:00 pm</span>
+            </p>
+
+            <img
+              src="./assets/images/shape-5.png"
+              width="921"
+              height="1036"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+            <img
+              src="./assets/images/shape-6.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-3 move-anim"
+            />
           </div>
-        </div>
-        <p>
-          臺灣燒肉生態已陷泥沼，吃來吃去不外乎是傳統日式燒肉吃到飽、平價親民的韓式燒肉、
-          手作侍者桌邊服務的高檔燒肉。 而〔 續すみびやき
-          〕將打破僵局，我們集結了業界各領域職人，以無菜單料理的形式呈
-          現，「燒肉」仍是本質，但我們將季節農作、在地特產、臺灣飲食文化融入餐點，突破
-          燒肉店流於形式的桎梏，不再是外國人怎麼吃，我們就怎麼吃。 Fine Dining
-          餐廳是概念、是奢華、是精緻、是味蕾的屏障，同時卻也是文化與生活。 在〔
-          續すみびやき〕燒肉會是元素，也可以成為信仰，為您帶來不一樣的感官饗宴。
-          我們相聚，「緣」是動機，而「續」是動作，為了不再原地踏步，立刻開始動作。
-        </p>
-      </article>
-    </section>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section
+          class="section about text-center"
+          aria-labelledby="about-label"
+          id="about"
+        >
+          <div class="container">
+            <div class="about-content">
+              <p class="label-2 section-subtitle" id="about-label">品牌簡介</p>
+
+              <p class="section-text">
+                是一間重新定義臺灣燒肉樣態的概念店，我們將有別以往的經營模式。
+                臺灣燒肉生態已陷泥沼，吃來吃去不外乎是傳統日式燒肉吃到飽、平價親民的韓式燒肉、
+                手作侍者桌邊服務的高檔燒肉。 而〔 續すみびやき
+                〕將打破僵局，我們集結了業界各領域職人，以無菜單料理的形式呈
+                現，「燒肉」仍是本質，但我們將季節農作、在地特產、臺灣飲食文化融入餐點，突破
+                燒肉店流於形式的桎梏，不再是外國人怎麼吃，我們就怎麼吃。 Fine
+                Dining
+                餐廳是概念、是奢華、是精緻、是味蕾的屏障，同時卻也是文化與生活。
+                在〔
+                續すみびやき〕燒肉會是元素，也可以成為信仰，為您帶來不一樣的感官饗宴。
+                我們相聚，「緣」是動機，而「續」是動作，為了不再原地踏步，立刻開始動作。
+              </p>
+
+              <div class="contact-label">Book Through Call</div>
+
+              <a
+                href="tel:+804001234567"
+                class="body-1 contact-number hover-underline"
+                >+80 (400) 123 4567</a
+              >
+            </div>
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.jpg"
+                width="570"
+                height="570"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+                data-parallax-item
+                data-parallax-speed="1"
+              />
+
+              <div
+                class="abs-img abs-img-1 has-before"
+                data-parallax-item
+                data-parallax-speed="1.75"
+              >
+                <img
+                  src="./assets/images/about-abs-image.jpg"
+                  width="285"
+                  height="285"
+                  loading="lazy"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+            </figure>
+
+            <img
+              src="./assets/images/shape-3.png"
+              width="197"
+              height="194"
+              loading="lazy"
+              alt=""
+              class="shape"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #SPECIAL DISH
+      -->
+
+        <!-- 
+        - #TESTIMONIALS
+      -->
+
+        <!-- 
+        - #RESERVATION
+      -->
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <!-- 
+        - #EVENT
+      --></article>
+    </main>
+    <!-- 
+        - #MAP
+      -->
     <div class="map">
       <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28924.0128284826!2d121.540089!3d25.017045950000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da80a7ad%3A0xacc4d11dc963103c!2z5Y-w5YyXMTAx6LO854mp5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1698138971786!5m2!1szh-TW!2stw"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3381729729404!2d121.52683527586386!3d25.022595177823725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9bd69f8cebf%3A0xc9b2854995fce284!2z5LiL55S66aOf5aCCKOaykuacieioguS9jS_lhazkvJHmiJboqbPntLDnh5_mpa3mmYLplpPoq4vmn6XoqaJGQuaIlklHKQ!5e0!3m2!1szh-TW!2stw!4v1698203461741!5m2!1szh-TW!2stw"
         width="600"
         height="450"
         style="border: 0"
@@ -132,37 +618,60 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <div class="space">
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
-    <footer id="footerWrapper" class="footer5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="copyright">
-              Copyright © 2023
-              <a href="">XU SUMIBIYAKI</a>
-              / All rights reserved.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <ul class="social-icons">
-              <li>
-                <a class="instagram" href="#" title="follow us on Instagram"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url('./assets/images/footer-bg.jpg')"
+    >
+      <p>2023 © XU SUMIBIYAKI All right reserved.</p>
+      <div class="rounded-social-buttons">
+        <a
+          target="”_blank”"
+          class="social-button instagram"
+          href="https://www.instagram.com/"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
       </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
