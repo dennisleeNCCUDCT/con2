@@ -2437,3 +2437,51 @@ textarea.input-field {
 .barhead {
   font-family: "ShipporiMincho";
 }
+
+.modal-backdrop {
+  background-color: #ccc;
+}
+
+.modal-backdrop.in {
+  opacity: 1;
+}
+
+.loader {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bg {
+  background: url("https://images.unsplash.com/photo-1613912400525-07394fc956f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80")
+    no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.loading-text {
+  color: #fff;
+  font-size: 50px;
+}
+
+#hideDiv {
+  background: red;
+  width: 400px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 10;
+}

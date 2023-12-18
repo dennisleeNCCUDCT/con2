@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+@font-face {
+  font-family: "ShipporiMincho";
+  src: url("./assets/使用字體/源流明體/GenRyuMinTW-Bold.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  background: url("https://www.youtube.com/watch?v=QF5QC-DizYQ&ab_channel=Joeman")
+    center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: 7;
+  filter: blur(0px);
+}
+
+.loading-text {
+  position: fixed;
+  color: white;
+  font-size: 50px;
+  z-index: 7;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: 0;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  z-index: 0;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+  z-index: 0;
+}
+
+.enterbutton {
+  margin-top: 300px;
+  z-index: 20;
+}
+
+#a {
+  z-index: 10;
+}
+
+.btn {
+  margin-top: 300px;
+  z-index: 7;
+  color: white;
+}
+
+.simple-btn button,
+.btn-size,
+.secondary-btn button {
+  margin: 10px;
+  z-index: 7;
+}
+
+@font-face {
+  font-family: "ShipporiMincho";
+  src: url("./assets/使用字體/源流明體/GenRyuMinTW-Bold.ttf") format("truetype");
+}
